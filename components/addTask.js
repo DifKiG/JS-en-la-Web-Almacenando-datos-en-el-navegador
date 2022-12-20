@@ -56,10 +56,12 @@ export const createTask = ({ value, dateFormat, complete, id }) => {
     taskContent.appendChild(checkComplete(id));
     taskContent.appendChild(titleTask);
 
-    const dateElement = document.createElement("span");
-    dateElement.innerHTML = dateFormat;
+    //para modificar que aparezca la hora a cambio de la fecha
+    //const dateElement = document.createElement("span");
+    //dateElement.innerHTML = dateFormat;
+
     task.appendChild(taskContent);
-    task.appendChild(dateElement);
+    //task.appendChild(dateElement);
     task.appendChild(deleteIcon(id));
     return task;
 };
